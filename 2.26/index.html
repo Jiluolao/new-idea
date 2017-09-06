@@ -1,0 +1,102 @@
+<!--
+	声明当前文档类型
+-->
+<!doctype html>
+<html><!--跟目录标签-->
+	<head>
+		<!--声明当前页面编码集 国际编码utf-8 中文编码gbk gb2312 服务器-->
+		<meta charset="utf-8"/>
+		<!--网页三要素 标题，关键词，描述-->
+		<title>多边形选择导航特效</title>
+		<meta name="keywords" content="关键词"/>
+		<meta name="description" content="描述"/>
+		<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		body{
+			background-image:url('images/bodyBg.jpg');/*背景图片*/
+			<!--background-size:200px 200px;-->/*背景大小*/
+			background-repeat:no-repeat;/*背景是否平铺*/
+			background-position:center top;/*背景定位*/
+		}
+		.box{
+			width:980px;
+			height:550px;
+			margin:50px auto;
+		}
+		.box ul li{
+			width:180px;
+			height:105px;
+			background:rgba(0,0,0,0.5);
+			list-style:none;/*去掉小黑点*/
+			position:relative;/*相对定位 参照物*/
+			float:left;
+			margin:30px 5px;
+		}
+		.box ul li.liu{
+			margin-left:100px;
+		}
+		.box ul li:before{
+			content:'';/*必须要加上的*/
+			width:180px;
+			height:105px;
+			background:rgba(0,0,0,0.5);
+			/*display:block;以块元素显示*/
+			/*float:left;*/
+			position:absolute;/*绝对定位*/
+			left:0;
+			top:0;
+			-webkit-transform:rotate(60deg);
+		}
+		.box ul li:after{
+			content:'';/*必须要加上的*/
+			width:180px;
+			height:105px;
+			background:rgba(0,0,0,0.5);
+			/*display:block;以块元素显示*/
+			/*float:left;*/
+			position:absolute;/*绝对定位*/
+			left:0;
+			top:0;
+			-webkit-transform:rotate(-60deg);
+		}
+		.box ul li img{
+			position:absolute;
+			left:0;right:0;top:0;bottom:0;
+			margin:auto;
+			z-index:3;
+			/*left:50%;
+			margin-left:-40px;
+			top:50%;
+			margin-top:-40px;
+			*/
+			-webkit-transition:all 2s;
+		}
+		.box ul li:hover img{
+			-webkit-transform:scale(1.4) rotate(360deg);
+		}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li><img src="images/1.png"/></li>
+				<li><img src="images/2.png"/></li>
+				<li><img src="images/3.png"/></li>
+				<li><img src="images/4.png"/></li>
+				<li><img src="images/5.png"/></li>
+				<li class="liu"><img src="images/6.png"/></li>
+				<li><img src="images/7.png"/></li>
+				<li><img src="images/8.png"/></li>
+				<li><img src="images/9.png"/></li>
+				<li><img src="images/10.png"/></li>
+				<li><img src="images/11.png"/></li>
+				<li><img src="images/12.png"/></li>
+				<li><img src="images/13.png"/></li>
+				<li><img src="images/14.png"/></li>
+			</ul>
+		</div>
+	</body>
+</html>
