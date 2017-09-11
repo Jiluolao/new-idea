@@ -1,0 +1,21 @@
+#ball{
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+}
+a{
+  position: absolute;
+  text-decoration: none;
+  color: #666;
+  border-right: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+a:hover{
+  color: #fff;
+}
+canvas{
+  position: absolute;
+  width: 600px;
+  height: 600px;
+}
