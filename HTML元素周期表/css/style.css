@@ -1,0 +1,146 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	width: 1266px;
+	height: 650px;
+	background-color: rgba(0,0,0,.8);
+	margin: 0 auto;
+	padding: 10px
+	position: relative;
+}
+.header .t-title{
+	position: absolute;
+	width: 350px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 20px;
+	background-color: #666;
+	color: #fff;
+	font-size: 36px;
+	top: 30px;
+	left: 300px;
+}
+.header .content{
+	width: 1200px;
+	height: 500px;
+	margin: 0 auto;
+}
+.content .box1{
+	width: 1200px;
+	height: 50px;
+	margin-bottom: 5px; 
+}
+.content .box1 .a-box{
+	display: inline-block;
+	border-radius: 5px;
+	line-height: 50px;
+	background-color: #f7acbc;
+	text-align: center;
+}
+.content .box1 .a-box a{
+	display: inline-block;
+	width: 62px;
+	color: #222;
+	font-size: 12px;
+	font-weight: bold;
+	/*height: 50px;*/
+	/*为什么设置高度会往下移动*/
+	text-decoration: none;
+}
+.content .box1 .a-box a:hover{
+	color: #fff;
+	font-size: 14px;
+	border-radius: 10px;
+	background-color: #111;
+}
+.content .box1 .n-box{
+	opacity: 0;
+}
+.content .box1 .ai-box{
+	background-color: #ffc20e;/*粉红*/
+}
+.content .box1 .p-box{
+	background-color: sienna;
+}
+.content .box1 .o-box{
+	background-color: #f36c21;/*靛青*/
+}
+.content .box1 .c-box{
+	background-color: Lime;/*酸橙色*/
+}
+
+.content .box1 .b-box{
+	background-color: RoyalBlue;/*皇军蓝*/
+}
+.content .box1 .w-box{
+	background-color: #ed1941;/*深绿宝石*/
+}
+.content .box1 .r-box{
+	background-color: Ivory;/*象牙*/
+}
+.content .box1 .l-box{
+	background-color: #2585a6;/*橄榄*/
+}
+.header .title-box{
+	width: 900px;
+	height: 150px;
+	margin: 5px auto;
+	/*background-color: #fff;*/
+}
+.header .title-box ul{
+	width: 900px;
+	height: 150px;
+
+}
+.header .title-box ul li{
+	display: flex;/*这里使用flex布局？*/
+	float: left;
+	list-style: none;
+	width: 200px;
+	height: 30px;
+	font-size: 16px;
+	line-height: 30px;
+	/*background-color: #000;*/
+	margin: 10px;
+	color: #fff;
+}
+.header .title-box ul li .title{
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+	border-radius: 5px;
+}
+.header .title-box ul li span{
+	width: 150px;
+	height: 30px;
+}
+ul li .box1{
+	background-color: #ffc20e;
+}
+ul li .box2{
+	background-color: #f7acbc;
+}
+ul li .box3{
+	background-color: Lime;
+}
+ul li .box4{
+	background-color:Ivory;
+}
+ul li .box5{
+	background-color:sienna;
+}
+ul li .box6{
+	background-color:#f36c21;
+}
+ul li .box7{
+	background-color:RoyalBlue;
+}
+ul li .box8{
+	background-color:#ed1941;
+}
+ul li .box9{
+	background-color:#2585a6;
+}
