@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style type="text/css">
+                *{margin: 0;padding: 0;}
+                #space{
+                        perspective: 800px;
+                        perspective-origin: 50% 50%;
+                        overflow:hidden;
+                }
+                #main{
+                        transform-style: preserve-3d;
+                        width: 320px;height: 370px;
+                        position: relative;
+                        margin:auto;
+                }
+                .page{width:300px;height:350px;
+                        position:absolute;
+                        padding:10px;
+                        background-color: #000;
+                        color:#fff;line-height: 350px;
+                        font-size:300px;
+                        text-align: center;}
+                        #page1{
+                                transition: transform 1s linear;
+                                transform-origin: bottom;
+                        }
+                        #page2,#page3,#page4,#page5,#page6,#page7,#page8{
+                                transform: rotateX(90deg);
+                                transition: transform 1s linear;
+                                transform-origin: bottom;
+                        }
+                #btn a{font-size: 20px;text-decoration: none;}
+                #btn{width:100px;margin:100px auto;position: relative;}
+        </style>
+</head>
+<body>
+<script type="text/javascript">
+        window.onload=function(){
+                var next=document.getElementById('next');
+                var prev=document.getElementById('prev');
+                var num=1;
+                prev.onclick=function(){
+                        if(num==1){
+                                return;
+                        }
+                        var page=document.getElementById('page'+num);
+                                page.style.transform='rotateX(90deg)';
+                                num--;
+                                console.log(num);
+                        var        page1=document.getElementById('page'+num);
+                                page1.style.transform='rotateX(0deg)';
+                }
+                next.onclick=function(){
+                        if(num==8){
+                                        return;
+                                }
+                        var page=document.getElementById('page'+num);
+                                page.style.transform='rotateX(-90deg)';
+                                num++;
+                                console.log(num);
+                        var        page1=document.getElementById('page'+num);
+                                page1.style.transform='rotateX(0deg)';
+                                
+
+                }
+
+        }
+</script>
+        <div id="space">
+                <div id="main">
+                        <div class="page" id="page1">1</div>
+                        <div class="page" id="page2">2</div>
+                        <div class="page" id="page3">3</div>
+                        <div class="page" id="page4">4</div>
+                        <div class="page" id="page5">5</div>
+                        <div class="page" id="page6">6</div>
+                        <div class="page" id="page7">7</div>
+                        <div class="page" id="page8">8</div>
+                </div>
+        </div>
+        <div id="btn">
+                <a href="javascript:;" id='next'>next</a>
+                <a href="javascript:;" id='prev'>prev</a>
+        </div>
+</body>
+</html>
